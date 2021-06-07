@@ -1,0 +1,12 @@
+<h2>This is my answer</h2>
+
+<% if params[:ask].end_with?('?') %>
+  <p>Silly question, get dressed and go to work!.</p>
+  <% elsif params[:ask] == "I am going to work" %>
+  <p>"Great!"</p>
+  <% else %>
+  <p>I don't care, get dressed and go to work!</p>
+<% end %>
+
+<%= link_to "Ask a new question", root_path %>
+
